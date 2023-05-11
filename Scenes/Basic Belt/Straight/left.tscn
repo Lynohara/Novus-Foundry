@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4na0wf66oafd"]
+
+[ext_resource type="Texture2D" uid="uid://cpdjr83yst7i4" path="res://Assets/Textures/Machines/Basic Belt/Straight/1.png" id="1_ypa0j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kac07"]
+size = Vector2(44, 28)
+
+[node name="Area2D" type="Area2D"]
+z_index = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-7, 0)
+shape = SubResource("RectangleShape2D_kac07")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+rotation = -1.5708
+texture = ExtResource("1_ypa0j")
